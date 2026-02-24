@@ -11,4 +11,8 @@ public class Complex {
     public Complex(double real){
         this.real = real;
     }
+    
+    public double getRealPart(){
+    
+    }
 }
