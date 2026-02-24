@@ -13,9 +13,21 @@ public class Complex {
     }
     
     public double getRealPart(){
+        return real;
+    }
     
+    public double getImaginaryPart(){
+        return imaginary;
+    }
+    
+    public Complex add(Complex other){
+        double thisReal = this.getRealPart();               //a
+        double thisImaginary = this.getImaginaryPart();     //bi
+        
+        double otherReal = other.getRealPart();             //c
+        double otherImaginary = other.getImaginaryPart();   //di
+        
+        return (thisReal + otherReal) + (thisImaginary + otherImaginary);
+        
     }
 }
-
-
-//helloooooooooooooooooo
